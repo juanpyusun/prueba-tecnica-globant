@@ -8,7 +8,7 @@ class DepartmentSchema(Schema):
     id = fields.Int(dump_only=True)
     name = fields.Str(required=True)
     
-class EmploymentsRecordSchema(Schema):
+class EmploymentRecordSchema(Schema):
     id = fields.Int(dump_only=True)
     employee_id = fields.Int(required=True)
     job_id = fields.Int(required=True)

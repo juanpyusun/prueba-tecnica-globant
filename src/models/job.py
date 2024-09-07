@@ -1,4 +1,4 @@
-from database import dbSqlAlchemy as db
+from ..database import dbSqlAlchemy as db
 
 class JobModel(db.Model):
     __tablename__ = 'jobs'

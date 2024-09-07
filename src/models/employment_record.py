@@ -1,4 +1,4 @@
-from database import dbSqlAlchemy as db
+from ..database import dbSqlAlchemy as db
 
 class EmploymentRecordModel(db.Model):
     __tablename__ = 'employment_records'
@@ -10,8 +10,8 @@ class EmploymentRecordModel(db.Model):
     job_id = db.Column(db.Integer, db.ForeignKey('jobs.id'), nullable=False)
     
     def __repr__(self):
-        return f'<EmploymentRecord:
+        return f"""<EmploymentRecord:
                     <Employee: {self.name}>, 
                     <Date: {self.date}>, 
                     <Department: {self.department_id}>, 
-                    <Job: {self.job_id}>>'
+                    <Job: {self.job_id}>>"""

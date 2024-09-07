@@ -26,3 +26,4 @@
 10. crear imagen docker `docker build -t prueba-tecnica .` para comprobar que todo funcione correctamente hasta este punto
 11. Creacion de los modelos `department`, `employment_record`y `job`; cumpliendo con las especificaciones de las tablas encontradas en los documentos `*.csv`
 12. Creacion del archivo `schemas` para el manejo de errores en el ingreso de datos, (¿Es este el dto?)
+13. Creacion de los endpoints `jobs`, `departments` y `employment-records` con dummy data de respuesta
